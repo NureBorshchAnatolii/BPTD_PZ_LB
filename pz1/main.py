@@ -1,6 +1,7 @@
 from task1 import decrypt_text
 from task2 import vigenere
 from task3 import find_key_vigenere
+from task4 import otp
 
 if __name__ == '__main__':
 
@@ -37,4 +38,28 @@ if __name__ == '__main__':
     task3_result = vigenere(task3_encrypted, task3_key, True)
     
     print(task3_result)
+    
+    # task4
+    print("Task 4")
+    task4_encrypted = "6229382959335367381141471137"
+    task4_key = "ода"
+    
+    task4_result = otp(task4_encrypted, task4_key, True)
+    print(task4_result)
+    
+    # task5
+    print("Task 5")
+    task5_decrypted = "Ознайомити студентів з підстановочними шифрами відпрацювати навички в"
+    task5_key = "Лабораторна робота шифрування"
+    
+    task5_result = otp(task5_decrypted, task5_key)
+    print(task5_result)
+    
+    # task6
+    print("Task 6")
+    task6_decrypted = ""
+    task6_key = ""
+    
+    task6_result = otp(task6_decrypted, task6_key, True)
+    print(task6_result)
 
