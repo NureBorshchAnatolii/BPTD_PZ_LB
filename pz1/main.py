@@ -57,9 +57,9 @@ if __name__ == '__main__':
     
     # task6
     print("Task 6")
-    task6_decrypted = ""
-    task6_key = ""
+    task6_crypted = "6194260307928685083535369952297693826191137509087023211631298464267304840864546430665414401457959975327649"
+    task6_key = "Лабораторна робота шифрування"
     
-    task6_result = otp(task6_decrypted, task6_key, True)
+    task6_result = otp(task6_crypted, task6_key, True)
     print(task6_result)
 
